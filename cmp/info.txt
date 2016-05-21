@@ -1,0 +1,34 @@
+*************************
+** IMPORTER SUMMARY *****
+** THOMAS KRANNICH ******
+*************************
+
+- to start the programm: 
+#########################
+- extract all files to htdocs (localhost)
+windows-example: 
+C:\xampp\php\php.exe -f "C:\xampp\htdocs\cmp\importer.php" flub
+C:\xampp\php\php.exe -f "C:\xampp\htdocs\cmp\importer.php" glorf
+
+if folder change:
+C:\xampp\php\php.exe -f "C:\xampp\htdocs\cmp\importer.php" flub /path/to/other/folder
+example included
+C:\xampp\php\php.exe -f "C:\xampp\htdocs\cmp\importer.php" flub /feed-exports2/
+
+- applied pluging:
+##########################################
+- used php-plugin: spyc-yaml: https://github.com/eriknyk/Yaml (is in folder included), in system/spyc.php
+
+- things to know
+###############################
+- in system/ are all systemcontroller, db, ...
+- script display the imported files or a message if was wrong and simmulation-inserts (not real connection)
+- /system/activerecord is done with singleton
+- database connection is done with a mockobject (/system/mockdatabaseconnection)
+
+- what should I do better with more time: installing linux, using curl_exec, was working via webpage but
+not with script php.exe and unit-testing (I can't install it, I tried, but was not possible)
+
+
+
+ 
